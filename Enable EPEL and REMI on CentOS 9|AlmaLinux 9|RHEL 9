@@ -1,0 +1,11 @@
+RHEL 9 sudo subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms sudo sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+
+CentOS 9 sudo dnf config-manager --set-enabled crb sudo dnf install epel-release epel-next-release
+
+AlmaLinux 9 sudo dnf config-manager --set-enabled crb sudo dnf install epel-release
+
+sudo dnf repolist
+
+Enable REMI on CentOS 9|AlmaLinux 9| RHEL 9 sudo dnf install http://rpms.remirepo.net/enterprise/remi-release-9.rpm
+
+sudo dnf update
